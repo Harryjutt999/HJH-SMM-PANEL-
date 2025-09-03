@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HJH SMM Panel - Add Funds</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 style="text-align:center; padding-bottom:20px;">HJH Panel</h2>
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="order.html">➕ New Order</a>
+    <a href="orders.html">📋 Orders</a>
+    <a href="services.html">⚙️ Services</a>
+    <a href="addfunds.html">💳 Add Funds</a>
+    <a href="support.html">📨 Support</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="login.html">🚪 Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="navbar">💳 Add Funds - HJH SMM Panel</div>
+
+    <!-- Add Funds Form -->
+    <div class="card">
+      <h3>Add Funds</h3>
+      <form id="fundsForm" onsubmit="return validateForm('fundsForm')">
+        
+        <label for="method">Payment Method</label>
+        <select id="method" required>
+          <option value="">Select Method</option>
+          <option>💳 Credit/Debit Card</option>
+          <option>🅿️ PayPal</option>
+          <option>₿ Crypto</option>
+        </select>
+
+        <label for="amount">Amount ($)</label>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+
+        <button type="submit" class="btn" style="width:100%;">Add Funds</button>
+      </form>
+    </div>
+
+    <!-- Transaction History -->
+    <div class="card">
+      <h3>Transaction History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Method</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#T001</td>
+            <td>PayPal</td>
+            <td>$50</td>
+            <td style="color:green;">Completed</td>
+            <td>2025-09-01</td>
+          </tr>
+          <tr>
+            <td>#T002</td>
+            <td>Crypto</td>
+            <td>$100</td>
+            <td style="color:orange;">Pending</td>
+            <td>2025-09-02</td>
+          </tr>
+          <tr>
+            <td>#T003</td>
+            <td>Card</td>
+            <td>$30</td>
+            <td style="color:red;">Failed</td>
+            <td>2025-09-03</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+            </html>
