@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HJH SMM Panel - New Order</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 style="text-align:center; padding-bottom:20px;">HJH Panel</h2>
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="order.html">➕ New Order</a>
+    <a href="orders.html">📋 Orders</a>
+    <a href="services.html">⚙️ Services</a>
+    <a href="addfunds.html">💳 Add Funds</a>
+    <a href="support.html">📨 Support</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="login.html">🚪 Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="navbar">➕ New Order - HJH SMM Panel</div>
+
+    <div class="card">
+      <h3>Place a New Order</h3>
+      <form id="orderForm" onsubmit="return validateForm('orderForm')">
+        
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option>Instagram Followers</option>
+          <option>Instagram Likes</option>
+          <option>Facebook Likes</option>
+          <option>YouTube Views</option>
+        </select>
+
+        <label for="service">Service</label>
+        <select id="service" required>
+          <option value="">Select Service</option>
+          <option>HQ Followers - $5 / 1k</option>
+          <option>Fast Likes - $3 / 1k</option>
+          <option>Real Views - $2 / 1k</option>
+        </select>
+
+        <label for="link">Link</label>
+        <input type="url" id="link" placeholder="Enter link" required>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" placeholder="Enter quantity" required>
+
+        <button type="submit" class="btn" style="width:100%;">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+          </html>
