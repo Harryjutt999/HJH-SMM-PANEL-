@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HJH SMM Panel - Support</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 style="text-align:center; padding-bottom:20px;">HJH Panel</h2>
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="order.html">➕ New Order</a>
+    <a href="orders.html">📋 Orders</a>
+    <a href="services.html">⚙️ Services</a>
+    <a href="addfunds.html">💳 Add Funds</a>
+    <a href="support.html">📨 Support</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="login.html">🚪 Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="navbar">📨 Support - HJH SMM Panel</div>
+
+    <!-- New Ticket -->
+    <div class="card">
+      <h3>Create New Ticket</h3>
+      <form id="ticketForm" onsubmit="return validateForm('ticketForm')">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Enter subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Describe your issue..." required></textarea>
+
+        <button type="submit" class="btn" style="width:100%;">Submit Ticket</button>
+      </form>
+    </div>
+
+    <!-- Ticket List -->
+    <div class="card">
+      <h3>My Tickets</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket ID</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Last Update</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#TCK1001</td>
+            <td>Order Delay Issue</td>
+            <td style="color:orange;">Open</td>
+            <td>2025-09-02</td>
+          </tr>
+          <tr>
+            <td>#TCK1002</td>
+            <td>Payment Not Received</td>
+            <td style="color:green;">Answered</td>
+            <td>2025-09-01</td>
+          </tr>
+          <tr>
+            <td>#TCK1003</td>
+            <td>Refund Request</td>
+            <td style="color:red;">Closed</td>
+            <td>2025-08-30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+          </html>
