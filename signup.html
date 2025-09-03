@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HJH SMM Panel - Signup</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;background:#f1f5f9;">
+  
+  <div class="card" style="width:350px;text-align:center;">
+    <h2 style="margin-bottom:20px;color:#4f46e5;">Create Account - HJH SMM Panel</h2>
+    
+    <form id="signupForm" onsubmit="return validateForm('signupForm')">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit" class="btn" style="width:100%;">Sign Up</button>
+    </form>
+    
+    <p style="margin-top:15px;">
+      Already have an account? <a href="login.html" style="color:#4f46e5;">Login</a>
+    </p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
