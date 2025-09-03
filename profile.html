@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HJH SMM Panel - Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 style="text-align:center; padding-bottom:20px;">HJH Panel</h2>
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="order.html">➕ New Order</a>
+    <a href="orders.html">📋 Orders</a>
+    <a href="services.html">⚙️ Services</a>
+    <a href="addfunds.html">💳 Add Funds</a>
+    <a href="support.html">📨 Support</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="login.html">🚪 Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="navbar">👤 Profile - HJH SMM Panel</div>
+
+    <!-- Profile Settings -->
+    <div class="card">
+      <h3>Profile Information</h3>
+      <form id="profileForm" onsubmit="return validateForm('profileForm')">
+        
+        <label for="name">Full Name</label>
+        <input type="text" id="name" value="Hamza Jutt" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" value="user@hjhpanel.com" required>
+
+        <label for="password">New Password</label>
+        <input type="password" id="password" placeholder="Enter new password">
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" placeholder="Confirm new password">
+
+        <button type="submit" class="btn" style="width:100%;">Update Profile</button>
+      </form>
+    </div>
+
+    <!-- Account Summary -->
+    <div class="card">
+      <h3>Account Summary</h3>
+      <p><b>Username:</b> hjh_user01</p>
+      <p><b>Balance:</b> $150.00</p>
+      <p><b>Joined:</b> 2025-01-15</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
