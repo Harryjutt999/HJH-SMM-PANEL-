@@ -1,0 +1,55 @@
+<!-- Sidebar -->
+<div class="sidebar">
+  <!-- Logo -->
+  <img src="assets/logo.png" alt="HJH Panel Logo" 
+       style="width:150px; margin:0 auto 20px; display:block;">
+
+  <!-- Menu Items with Icons -->
+  <a href="index.html">
+    <img src="assets/icons/home.png" alt="Home" 
+         style="width:18px; vertical-align:middle; margin-right:6px;">
+    Dashboard
+  </a>
+
+  <a href="order.html">
+    <img src="assets/icons/order.png" alt="Order" 
+         style="width:18px; vertical-align:middle; margin-right:6px;">
+    New Order
+  </a>
+
+  <a href="orders.html">
+    <img src="assets/icons/orders.png" alt="Orders" 
+         style="width:18px; vertical-align:middle; margin-right:6px;">
+    Orders
+  </a>
+
+  <a href="services.html">
+    <img src="assets/icons/services.png" alt="Services" 
+         style="width:18px; vertical-align:middle; margin-right:6px;">
+    Services
+  </a>
+
+  <a href="addfunds.html">
+    <img src="assets/icons/wallet.png" alt="Add Funds" 
+         style="width:18px; vertical-align:middle; margin-right:6px;">
+    Add Funds
+  </a>
+
+  <a href="support.html">
+    <img src="assets/icons/support.png" alt="Support" 
+         style="width:18px; vertical-align:middle; margin-right:6px;">
+    Support
+  </a>
+
+  <a href="profile.html">
+    <img src="assets/icons/profile.png" alt="Profile" 
+         style="width:18px; vertical-align:middle; margin-right:6px;">
+    Profile
+  </a>
+
+  <a href="login.html">
+    <img src="assets/icons/logout.png" alt="Logout" 
+         style="width:18px; vertical-align:middle; margin-right:6px;">
+    Logout
+  </a>
+</div>
